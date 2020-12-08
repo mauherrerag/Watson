@@ -80,9 +80,6 @@ For each index, the program will print out all the different scores obtained usi
 
 * **Mauricio Herrera** - [Git](https://github.com/mauherrerag)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-
 ## Acknowledgments
 
 * This project was assigned as the Final Project for CSC 483 - Text Retrieval and Web Search at the University of Arizona
