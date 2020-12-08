@@ -1,112 +1,88 @@
-# Setup your environment
+# Watson
 
-You will need to set up an appropriate coding environment on whatever computer
-you expect to use for this assignment.
-Minimally, you should install:
+This project attempts to replicate the groundbreaking IBM Watson by indexing wikipedia articles and using Jeopardy questions to query the system using different parameters, then comparing results and stating the best model.
 
-* [git](https://git-scm.com/downloads)
-* [Java](https://www.java.com/en/)(8 or higher)
-* [Maven](https://maven.apache.org/)
+## Getting Started
 
-# Check out a new branch
+These instructions will get you a copy of the project up and running on your local machine.
+* Clone this git repository to your local machine
+* Download and unzip the index files from [Dropbox](www.dropbox.com)
+* Place index files in src/main/resources/index
 
-Before you start editing any code, you will need to create a new branch in your
-GitHub repository to hold your work.
+### Prerequisites
 
-1. Go to the repository that GitHub Classroom created for you. You should have received an email/link and you are most probably reading this there. It should look like
-`https://github.com/cs4583_fall2020_hw*_java/cs-<your-username>`, where
-`<your-username>` is your GitHub username. 
-[Create a branch through the GitHub interface](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/).
-2. Name your `<branch>` as `lastname_firstname_dev`
-2. Clone the repository to your local machine and checkout the branch you
-just created. Your command must be similar to :
-   ```
-   git clone -b <branch> https://github.com/cs4583_fall2020_hw*_java/cs-<your-username>.git
-   git checkout lastname_firstname_dev
-   ```
-
-# Write your code
-
-You will implement one function each for each of the programming sub qns, Eg:`runQ1_1()` inside 
-the class `QueryEngine`. These functions should return the documents as asked in the question as a List of `ResultClass`. 
-
-Also, you **should not edit** these files:
-- `.travis.yml`
-- `src/main/resources/*.txt`
-- `src/test/java/edu/arizona/cs/*.java`
-- `src/main/java/edu/arizona/cs/ResultClass.java`
+* Java 8
+* git
+* Maven
 
 
+### Installing
 
-# Test your code
-
-Tests have been provided for you in the `src/test/java/edu/arizona/cs/Test_*.java` file.
-To run all the provided tests, run the ``mvn test`` script from the top project directory which contains a file named `pom.xml`
-
-If your code passes the test case, you will see an output similar to:
+cd into project directory
 ```
-[INFO] -------------------------------------------------------
-[INFO]  T E S T S
-[INFO] -------------------------------------------------------
-[INFO] Running edu.arizona.cs.TestQ5
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in edu.arizona.cs.TestQ5
-[INFO] 
-[INFO] Results:
-[INFO] 
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
-[INFO] 
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.037 s
-[INFO] Finished at: 2020-08-23T15:06:13-07:00
-[INFO] ------------------------------------------------------------------------
-
+cd .../Watson
 ```
 
+Run the following Maven command
 
-Note: doing `mvn clean` from time to time is a good habit
+```
+mvn verify
+```
 
-# Submit your code
+This will trigger a test to run and it will show all the different results obtained using different indices and parameters.
 
-As you are working on the code, you should regularly `git commit` to save your
-current changes locally and `git push` to push all saved changes to the remote
-repository on GitHub.
+## Running the tests
 
-To submit your assignment,
-[create a pull request on GitHub](https://help.github.com/articles/creating-a-pull-request/#creating-the-pull-request).
-where the "base" branch is "main", and the "compare" branch is the branch you
-created at the beginning of this assignment.
-Then go to the "Files changed" tab, and make sure that all your changes look as you would expect them
-to.
-There are test cases that will be run automatically (via., [travis](https://travis-ci.com/))
-when a pull request is submitted. 
-These are the same as `mvn test`. 
-So if your code passed `mvn test` in your machine, 
-it’s highly likely that it will pass in github. Nevertheless 
-you should make sure that you see a green tick mark or a message 
-saying “All Checks Have Passed”,
-![like this:](travis.png)
+The test can be run manually using:
+```
+mvn test
+```
+### Break down into tests
 
-If your test cases are failing, you will get an error message like this.
-![like this:](travis_fail.png)
+For each index, the program will print out all the different scores obtained using the different similarity functions.
+```
+========CALCULATING INDEX src/main/resources/index/stem========
+                --------Similarity Function: NONE
+        P@1: 20/100 = 0.2
+        MMR: 0.2
+                --------Similarity Function: org.apache.lucene.search.similarities.BM25Similarity
+        P@1: 20/100 = 0.2
+        MMR: 0.2
+                --------Similarity Function: org.apache.lucene.search.similarities.ClassicSimilarity
+        P@1: 0/100 = 0.0
+        MMR: 0.0
+                --------Similarity Function: org.apache.lucene.search.similarities.BooleanSimilarity
+        P@1: 13/100 = 0.13
+        MMR: 0.13
+                --------Similarity Function: org.apache.lucene.search.similarities.DFISimilarity
+        P@1: 31/100 = 0.31
+        MMR: 0.31
+                --------Similarity Function: org.apache.lucene.search.similarities.DFRSimilarity
+        P@1: 18/100 = 0.18
+        MMR: 0.18
+                --------Similarity Function: org.apache.lucene.search.similarities.LMDirichletSimilarity
+        P@1: 34/100 = 0.34
+        MMR: 0.34
+                --------Similarity Function: org.apache.lucene.search.similarities.LMJelinekMercerSimilarity
+        P@1: 23/100 = 0.23
+        MMR: 0.23
 
-click on the link which says `details` and find out what is causing the issue or which test case is not passing. Once you have identified that, close the pull request, fix the errors, and raise another pull request.
-**Do not merge the pull request.**
-
-Also note that if you change your code after raising a pull request, the changes will be automatically reflected in the pull request and hence in your travis test cases passing or not. 
-
-Your instructor will grade the code off this pull request. 
-Pull requests submitted after the deadline won’t be considered.
-If you have raised a pull request, then you don't have to submit the code in D2l.
-However do note that you still have to submit the answers to the other written questions in D2l. 
-# Grading
+```
 
 
-The programming question of this assignment will be graded primarily on their ability to pass the tests that
-have been provided to you on github after the pull request.
-Assignments that pass all, and with the corresponding code implementing the correct logic, will receive at least 95% of the
-possible points.
+## Built With
 
-To get the remaining of the points, your code will be checked for things like readability and code quality.
-***Please note that this time on there will be a penalty for not following all instructions. Especially `do not merge the pull request`.***
+* [Java](https://docs.oracle.com/javase/8/docs/api/) - programming language
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [Lucene](https://lucene.apache.org/) - Used to generate indices
+
+## Authors
+
+* **Mauricio Herrera** - [Git](https://github.com/mauherrerag)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+
+## Acknowledgments
+
+* This project was assigned as the Final Project for CSC 483 - Text Retrieval and Web Search at the University of Arizona
