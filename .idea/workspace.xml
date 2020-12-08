@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c30f4438-da6d-462b-b988-edfe597f1d5b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lIh6IQ7DauaFAHPYzuWRdwOvLZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.Watson">
+    <configuration name="QueryEngine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.arizona.cs.QueryEngine" />
+      <module name="Watson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.arizona.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Watson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.arizona.cs.Watson" />
+      <module name="Watson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.arizona.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestQ1_2_b.testDocsAndScores" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Watson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.arizona.cs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.arizona.cs" />
+      <option name="MAIN_CLASS_NAME" value="edu.arizona.cs.TestQ1_2_b" />
+      <option name="METHOD_NAME" value="testDocsAndScores" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Watson" />
+        <item itemvalue="Application.QueryEngine" />
+        <item itemvalue="JUnit.TestQ1_2_b.testDocsAndScores" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c30f4438-da6d-462b-b988-edfe597f1d5b" name="Default Changelist" comment="" />
+      <created>1607290335985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607290335985</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="308" y="109" key="#Project_Structure" timestamp="1607387851159">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="308" y="109" key="#Project_Structure/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607387851159" />
+    <state x="578" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607314498433">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="578" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607314498433" />
+    <state width="1638" height="922" key="GridCell.Tab.0.bottom" timestamp="1607450265710">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="922" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607450265710" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.0.1680.1050@0.0.1680.1050" timestamp="1607318793360" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/1680.25.1920.1055/0.0.1680.979@0.0.1680.979" timestamp="1607325950754" />
+    <state width="1638" height="922" key="GridCell.Tab.0.center" timestamp="1607450265708">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="922" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607450265708" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/1680.25.1920.1055/0.0.1680.1050@0.0.1680.1050" timestamp="1607318793358" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/1680.25.1920.1055/0.0.1680.979@0.0.1680.979" timestamp="1607325950753" />
+    <state width="1638" height="922" key="GridCell.Tab.0.left" timestamp="1607450265707">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="922" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607450265707" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/1680.25.1920.1055/0.0.1680.1050@0.0.1680.1050" timestamp="1607318793357" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/1680.25.1920.1055/0.0.1680.979@0.0.1680.979" timestamp="1607325950752" />
+    <state width="1638" height="922" key="GridCell.Tab.0.right" timestamp="1607450265709">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="922" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607450265709" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/1680.25.1920.1055/0.0.1680.1050@0.0.1680.1050" timestamp="1607318793359" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/1680.25.1920.1055/0.0.1680.979@0.0.1680.979" timestamp="1607325950754" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1607387436279">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607387436279" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1607387436278">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607387436278" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1607387436277">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607387436277" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1607387436279">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607387436279" />
+    <state x="383" y="144" key="Maven.ArtifactSearchDialog" timestamp="1607449129887">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="383" y="144" key="Maven.ArtifactSearchDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607449129887" />
+  </component>
+</project>
