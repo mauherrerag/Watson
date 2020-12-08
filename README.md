@@ -31,6 +31,22 @@ mvn verify
 
 This will trigger a test to run and it will show all the different results obtained using different indices and parameters.
 
+## Running the program
+
+The program can also be run by compiling the java files and running the main method in the Watson class
+
+```
+javac Watson.c
+java Watson
+```
+Inside the Watson class, the specific index to be used can be selected by modifying the pathsList array.
+
+```
+String[] pathsList = {noneIndexPath, stemIndexPath, lemmaIndexPath};
+pathsList = {stemIndexPath}
+```
+In this case, only the index that uses stemming will be used.
+
 ## Running the tests
 
 The test can be run manually using:
