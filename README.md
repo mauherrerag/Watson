@@ -47,6 +47,16 @@ pathsList = {stemIndexPath}
 ```
 In this case, only the index that uses stemming will be used.
 
+### Similarity Functions Used
+
+* [BM25](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/search/similarities/BM25Similarity.html)
+* [Boolean](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/search/similarities/BooleanSimilarity.html)
+* [Classic](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/search/similarities/ClassicSimilarity.html) - TFIDF
+* [DFIS](https://lucene.apache.org/core/8_0_0/core/org/apache/lucene/search/similarities/DFISimilarity.html)
+* [DFRS](https://lucene.apache.org/core/8_0_0/core/org/apache/lucene/search/similarities/DFRSimilarity.html)
+* [LMDirichletSimilarity](https://lucene.apache.org/core/8_0_0/core/org/apache/lucene/search/similarities/LMDirichletSimilarity.html)
+* [LMJelinekMercerSimilarity](https://lucene.apache.org/core/8_0_0/core/org/apache/lucene/search/similarities/LMJelinekMercerSimilarity.html)
+
 ## Running the tests
 
 The test can be run manually using:
