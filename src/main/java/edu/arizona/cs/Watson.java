@@ -11,6 +11,11 @@ public class Watson {
     private static String queryFilename = "src/main/resources/questions.txt";
 
     public static void main(String[] args ) {
+//        buildIndices();
+        playJeopardy();
+    }
+
+    public static void playJeopardy() {
         boolean lemma = false;
         boolean stem = false;
 
@@ -61,18 +66,17 @@ public class Watson {
 
         // Terminating
         System.out.println("\n\n\t================TERMINATED================\n\n");
-
     }
 
-    private void buildIndices() {
-//        LuceneIndex luceneIndex;
-//        System.out.println("\n\t\t========STARTING INDEX " + noneIndexPath + "========");
-//        luceneIndex = new LuceneIndex(noneIndexPath, false, false, false);
-//
-//        System.out.println("\n\t\t========STARTING INDEX " + noLemmaIndexPath + "========");
-//        luceneIndex = new LuceneIndex(noLemmaIndexPath, false, true, true);
-//
-//        System.out.println("\n\t\t========STARTING INDEX " + noStemIndexPath + "========");
-//        luceneIndex = new LuceneIndex(noStemIndexPath, true, false, true);
+    private static void buildIndices() {
+        LuceneIndex luceneIndex;
+        System.out.println("\n\t\t========STARTING INDEX " + noneIndexPath + "========");
+        luceneIndex = new LuceneIndex(noneIndexPath, false, false);
+
+        System.out.println("\n\t\t========STARTING INDEX " + stemIndexPath + "========");
+        luceneIndex = new LuceneIndex(stemIndexPath, false, true);
+
+        System.out.println("\n\t\t========STARTING INDEX " + lemmaIndexPath + "========");
+        luceneIndex = new LuceneIndex(lemmaIndexPath, true, false);
     }
 }
