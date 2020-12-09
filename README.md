@@ -20,13 +20,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 cd into project directory
 ```
-cd .../Watson
+$ cd .../Watson
 ```
 
 Run the following Maven command
 
 ```
-mvn verify
+$ mvn verify
 ```
 
 This will trigger a test to run and it will show all the different results obtained using different indices and parameters.
@@ -36,8 +36,8 @@ This will trigger a test to run and it will show all the different results obtai
 The program can also be run by compiling the java files and running the main method in the Watson class
 
 ```
-javac Watson.c
-java Watson
+$ javac Watson.c
+$ java Watson
 ```
 Inside the Watson class, the specific index to be used can be selected by modifying the pathsList array.
 
