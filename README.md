@@ -7,7 +7,9 @@ This project attempts to replicate the groundbreaking IBM Watson by indexing wik
 These instructions will get you a copy of the project up and running on your local machine.
 * Clone this git repository to your local machine
 * Download and unzip the index files from [Dropbox](https://arizona.box.com/s/mqtkkho9myv5lbz40ei6mku3fiawrcmx)
-* Place index files in src/main/resources/index
+* Place index directtory inside src/main/resources
+* Download the wikipedia subset of articles (if you plan to build the indices) from [Dropbox](https://arizona.box.com/s/0s9ybt3zo2vn42il9cl7kkawlb1x824o)
+* Place wiki-subset directory inside src/main/resources
 
 ### Prerequisites
 
