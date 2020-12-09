@@ -1,3 +1,11 @@
+/*
+File: QueryEngine.java
+Author: Mauricio Herrera
+Purpose: This class takes care of querying an index using a questions file containing n number of queries. The
+constructor takes in the indexPath, and flags to either lemmatize or stem.
+Course: CSC 483 - Text Retrieval and Web Search
+ */
+
 package edu.arizona.cs;
 
 import edu.stanford.nlp.simple.Sentence;

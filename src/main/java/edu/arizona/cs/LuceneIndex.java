@@ -1,3 +1,10 @@
+/*
+File: LuceneIndex.java
+Author: Mauricio Herrera
+Purpose: This class builds the index or indices indicated.
+Course: CSC 483 - Text Retrieval and Web Search
+ */
+
 package edu.arizona.cs;
 
 import edu.stanford.nlp.simple.Sentence;
@@ -50,6 +57,10 @@ public class LuceneIndex {
 
     // Methods
 
+    /*
+    This method uses the static variables holding the paths where the indices will be stored to iterate through them
+    and create the indices. It iterartes through the files in the wiki-subset directory and passes each one to parseDocument().
+     */
     public void buildIndex() {
         // Creating analyzer for tokenization
         StandardAnalyzer standardAnalyzer = new StandardAnalyzer();
@@ -77,6 +88,11 @@ public class LuceneIndex {
 
     }
 
+    /*
+    This method takes in the path for the document to be parsed, as well as the IndexWriter object where it will be
+    written to. It goes through the document line by line, identifying if a line contains the title, categories, or
+    article content. Then, once all three variables are set, they are passed to addDocToIndex().
+     */
     private void parseDocument(String filename, IndexWriter indexWriter) {
         String documentTitle = "";
         String categories = "";
@@ -135,6 +151,11 @@ public class LuceneIndex {
         }
     }
 
+    /*
+    This method takes in the title, categories, contents of the article, and the IndexWriter object and it
+    lemmatizes/stems the strings accordingly and adds them to the Document object. Finally, it writes the document
+    into the index.
+     */
     private void addDocToIndex(IndexWriter indexWriter, String title, String categories, String contents) {
         // Error checking for empty categories or content
         if (categories.equals("")) categories = ".";
@@ -180,6 +201,10 @@ public class LuceneIndex {
         }
     }
 
+    /*
+    This method uses a PorterStemmer to stem a given string and returns it. This method is static in order to use it
+    in the QueryEngine class.
+     */
     public static String stemTerm(String term) {
         PorterStemmer porterStemmer = new PorterStemmer();
         porterStemmer.setCurrent(term);

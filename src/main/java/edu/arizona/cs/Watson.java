@@ -1,3 +1,10 @@
+/*
+File: LuceneIndex.java
+Author: Mauricio Herrera
+Purpose: This class acts as the “view” in this model. It can create all indices or run queries on existing indices.
+Course: CSC 483 - Text Retrieval and Web Search
+ */
+
 package edu.arizona.cs;
 import org.apache.lucene.search.similarities.*;
 
@@ -15,6 +22,9 @@ public class Watson {
         playJeopardy();
     }
 
+    /*
+    This method iterates through the indices and calculates the scores for all the different types of similarity functions.
+     */
     public static void playJeopardy() {
         boolean lemma = false;
         boolean stem = false;
@@ -68,6 +78,9 @@ public class Watson {
         System.out.println("\n\n\t================TERMINATED================\n\n");
     }
 
+    /*
+    This method builds all three indices. It takes a few hours, especially when building the index with lemmas.
+     */
     private static void buildIndices() {
         LuceneIndex luceneIndex;
         System.out.println("\n\t\t========STARTING INDEX " + noneIndexPath + "========");

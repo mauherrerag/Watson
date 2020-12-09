@@ -13,7 +13,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c30f4438-da6d-462b-b988-edfe597f1d5b" name="Default Changelist" comment="" />
+    <list default="true" id="c30f4438-da6d-462b-b988-edfe597f1d5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/arizona/cs/LuceneIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/arizona/cs/LuceneIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/arizona/cs/QueryEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/arizona/cs/QueryEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/arizona/cs/ResultClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/arizona/cs/ResultClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/arizona/cs/Watson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/arizona/cs/Watson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/wiki-data.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,6 +128,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="308" y="109" key="#Project_Structure" timestamp="1607387851159">
